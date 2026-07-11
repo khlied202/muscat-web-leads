@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fanajeen — Beachfront Café on the Azaiba Seafront, Muscat</title>
+<meta name="description" content="Fanajeen is a relaxed beachfront café on the Azaiba seafront in Muscat — specialty coffee, fresh all-day breakfast, cold drinks and sweets, with the sea just steps away. Rated 4.1★ on TripAdvisor. Message us on WhatsApp." />
+<meta name="theme-color" content="#ffffff" />
+<meta property="og:title" content="Fanajeen — Beachfront Café on the Azaiba Seafront, Muscat" />
+<meta property="og:description" content="Specialty coffee, fresh breakfast and sweets right on the Azaiba seafront. Rated 4.1★ on TripAdvisor — #7 of 72 Muscat coffee spots." />
+<meta property="og:type" content="business.business" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2314282a'/%3E%3Ctext x='50' y='70' font-size='56' font-weight='600' text-anchor='middle' fill='%232A9D8F' font-family='Georgia,serif'%3EF%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   FANAJEEN — Beachfront Café · Light Editorial (v3 system)
+   Bright base · coastal-teal accent · Fraunces display · airy grid
+   ============================================================ */
+:root{
+  --bg:#ffffff;
+  --bg-soft:#f4f8f7;
+  --bg-tint:#e7f3f1;
+  --ink:#14282a;
+  --ink-2:#2c4144;
+  --muted:#5c7175;
+  --line:#e5eeec;
+  --line-2:#d3e3e0;
+  --accent:#2A9D8F;
+  --accent-deep:#0F766E;
+  --accent-soft:#dcf1ee;
+  --wa:#25d366; --wa-deep:#128c50;
+  --shadow-sm:0 1px 2px rgba(20,40,42,.05);
+  --shadow-md:0 14px 34px -16px rgba(20,40,42,.22);
+  --shadow-lg:0 34px 70px -24px rgba(20,40,42,.30);
+  --r-sm:12px; --r-md:18px; --r-lg:24px; --r-xl:30px;
+  --maxw:1180px;
+  --font-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --font-body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink-2);
+  font-family:var(--font-body);font-size:17px;line-height:1.65;font-weight:400;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2{font-family:var(--font-display);font-weight:600;line-height:1.06;margin:0;color:var(--ink);letter-spacing:-.01em}
+h3{font-family:var(--font-body);font-weight:700;line-height:1.25;margin:0;color:var(--ink);letter-spacing:-.01em}
+p{margin:0}
+.container{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:24px}
+.eyebrow{
+  font-family:var(--font-body);font-weight:700;font-size:.76rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--accent-deep);display:inline-flex;align-items:center;gap:.6em;
+}
+.eyebrow::before{content:"";width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:2px}
+.section{padding:96px 0}
+.section-head{max-width:660px;margin-bottom:52px}
+.section-head h2{font-size:clamp(2.3rem,5.6vw,3.5rem);margin:16px 0 14px}
+.section-head p{color:var(--muted);font-size:1.08rem;line-height:1.6}
+
+.skip{position:fixed;left:12px;top:-100px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:200;transition:top .2s}
+.skip:focus{top:12px}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6em;
+  font-family:var(--font-body);font-weight:600;font-size:1rem;line-height:1;
+  padding:15px 26px;border-radius:999px;cursor:pointer;border:1.5px solid transparent;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s,border-color .25s;
+  min-height:52px;white-space:nowrap;
+}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--ink);color:#fff;box-shadow:var(--shadow-sm)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);background:#0a1a1c}
+.btn-primary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px);background:rgba(20,40,42,.03)}
+.btn-accent{background:var(--accent-deep);color:#fff;box-shadow:var(--shadow-sm)}
+.btn-accent:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);background:#0b5c55}
+.btn-lg{font-size:1.05rem;padding:18px 32px;min-height:58px}
+
+/* ---------- Nav ---------- */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.80);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--font-display);font-weight:600;font-size:1.5rem;color:var(--ink);letter-spacing:-.01em}
+.brand .mark{width:40px;height:40px;border-radius:12px;background:var(--ink);color:var(--accent);display:grid;place-items:center;font-family:var(--font-display);font-weight:600;font-size:1.25rem;letter-spacing:-.02em;flex:none}
+.brand small{font-family:var(--font-body);font-weight:700;color:var(--accent-deep);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;display:block;line-height:1}
+.brand .wm{display:flex;flex-direction:column;gap:3px}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:.95rem;font-weight:600;color:var(--ink-2);transition:color .2s}
+.nav-links a:hover{color:var(--accent-deep)}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-cta{padding:12px 20px;min-height:46px;font-size:.92rem}
+.nav-toggle{display:none;background:transparent;border:1.5px solid var(--line-2);border-radius:12px;width:46px;height:46px;cursor:pointer;color:var(--ink)}
+.nav-toggle svg{width:22px;height:22px;margin:auto}
+.mobile-menu{display:none}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:72px 0 84px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(70% 60% at 88% 4%,rgba(42,157,143,.14),transparent 60%),
+             radial-gradient(60% 50% at 2% 100%,rgba(42,157,143,.08),transparent 62%)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center}
+.hero-copy{max-width:580px}
+.hero h1{font-size:clamp(2.8rem,7vw,4.7rem);margin:22px 0 0}
+.hero h1 em{font-style:italic;color:var(--accent-deep)}
+.hero .lede{font-size:1.22rem;color:var(--muted);margin:24px 0 30px;max-width:48ch;line-height:1.6}
+.hero-cta{display:flex;flex-wrap:wrap;gap:13px;margin-bottom:26px}
+.rating-chip{display:inline-flex;align-items:center;gap:11px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 16px;box-shadow:var(--shadow-sm)}
+.rating-chip .ig{width:21px;height:21px;color:#e8a33d;flex:none}
+.rating-chip b{font-weight:800;color:var(--ink)}
+.rating-chip .g{background:var(--bg-soft);border-radius:999px;padding:5px 12px;font-size:.82rem;font-weight:600;color:var(--muted)}
+.hero-media{position:relative}
+.hero-media .frame{position:relative;border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/5}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-tag{position:absolute;left:18px;bottom:18px;display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border:1px solid var(--line);padding:11px 16px;border-radius:999px;box-shadow:var(--shadow-md)}
+.hero-tag svg{width:20px;height:20px;color:var(--accent-deep);flex:none}
+.hero-tag .t{font-weight:700;color:var(--ink);font-size:.92rem;line-height:1.1}
+.hero-tag .s{font-size:.76rem;color:var(--muted)}
+
+/* ---------- Trust strip ---------- */
+.trust{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust .container{display:flex;flex-wrap:wrap;gap:14px 38px;justify-content:center;align-items:center;padding-top:22px;padding-bottom:22px;text-align:center}
+.trust-item{display:inline-flex;align-items:center;gap:9px;font-size:.95rem;color:var(--ink-2)}
+.trust-item svg{width:18px;height:18px;color:var(--accent);flex:none}
+.trust-item .star{color:#e8a33d}
+.trust-item b{color:var(--ink);font-weight:700}
+.trust-sep{width:5px;height:5px;border-radius:50%;background:var(--accent-soft)}
+
+/* ---------- Menu ---------- */
+.menu-note{display:inline-flex;align-items:center;gap:9px;background:var(--accent-soft);border:1px solid var(--line-2);border-radius:999px;padding:8px 16px;font-size:.86rem;color:var(--accent-deep);font-weight:600;margin-top:20px}
+.menu-note svg{width:16px;height:16px}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.mcard{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-lg);padding:32px 30px;box-shadow:var(--shadow-sm);transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s}
+.mcard:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);border-color:var(--line-2)}
+.mcard-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.mcard-ico{width:50px;height:50px;border-radius:14px;background:var(--accent-soft);display:grid;place-items:center;color:var(--accent-deep);flex:none}
+.mcard-ico svg{width:26px;height:26px}
+.mcard h3{font-size:1.24rem}
+.mcard ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.mcard li{font-size:.9rem;color:var(--ink-2);background:var(--bg-soft);border:1px solid var(--line);border-radius:999px;padding:6px 13px}
+
+/* ---------- Highlights ---------- */
+.highlights{background:var(--bg-soft)}
+.hl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.hl{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-md);padding:28px 24px;box-shadow:var(--shadow-sm)}
+.hl-ico{width:50px;height:50px;border-radius:14px;background:var(--accent-soft);color:var(--accent-deep);display:grid;place-items:center;margin-bottom:18px}
+.hl-ico svg{width:24px;height:24px}
+.hl h3{font-size:1.14rem;margin-bottom:8px}
+.hl p{font-size:.92rem;color:var(--muted)}
+
+/* ---------- Gallery ---------- */
+.gallery-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:40px}
+.ig-link{display:inline-flex;align-items:center;gap:9px;font-weight:700;color:var(--accent-deep);font-size:.93rem;border:1.5px solid var(--line-2);border-radius:999px;padding:11px 18px;transition:.2s;min-height:46px}
+.ig-link:hover{border-color:var(--accent-deep);background:var(--accent-soft)}
+.ig-link svg{width:19px;height:19px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:16px}
+.gal figure{margin:0;position:relative;overflow:hidden;border-radius:var(--r-md);box-shadow:var(--shadow-sm)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.gal figure:hover img{transform:scale(1.06)}
+.gal .tall{grid-row:span 2}
+.gal .wide{grid-column:span 2}
+.gal figcaption{position:absolute;inset:auto 0 0 0;padding:28px 16px 13px;font-size:.82rem;color:#fff;
+  background:linear-gradient(to top,rgba(8,24,22,.78),transparent);opacity:0;transition:opacity .3s;font-weight:600}
+.gal figure:hover figcaption{opacity:1}
+
+/* ---------- Visit / Map ---------- */
+.visit{background:var(--bg-soft)}
+.visit-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:stretch}
+.visit-grid>*{min-width:0}
+.map-frame{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-md);border:1px solid var(--line);min-height:400px}
+.map-frame iframe{width:100%;height:100%;min-height:400px;border:0;display:block;filter:grayscale(.12)}
+.visit-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-lg);padding:34px 32px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
+.info-row{display:flex;gap:15px;padding:18px 0;border-bottom:1px solid var(--line)}
+.info-row:first-child{padding-top:0}
+.info-ico{width:44px;height:44px;border-radius:12px;background:var(--accent-soft);color:var(--accent-deep);display:grid;place-items:center;flex:none}
+.info-ico svg{width:21px;height:21px}
+.info-row .k{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-deep);font-weight:700;margin-bottom:4px}
+.info-row .v{color:var(--ink-2);font-size:1rem}
+.visit-card .btn-row{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- Final CTA ---------- */
+.cta-final{position:relative;text-align:center;padding:104px 0;overflow:hidden;background:var(--bg-tint);border-top:1px solid var(--line)}
+.cta-final .inner{position:relative;max-width:700px;margin-inline:auto}
+.cta-final h2{font-size:clamp(2.4rem,5.8vw,3.7rem);margin-bottom:18px}
+.cta-final p{color:var(--muted);font-size:1.14rem;margin-bottom:32px}
+.cta-final .btn-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+
+/* ---------- Footer ---------- */
+.footer{background:var(--bg-soft);color:var(--muted);padding:64px 0 30px;border-top:1px solid var(--line)}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid var(--line)}
+.footer .brand{color:var(--ink);margin-bottom:16px}
+.footer p{font-size:.94rem;line-height:1.7}
+.footer h4{font-family:var(--font-body);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-deep);font-weight:700;margin:0 0 15px}
+.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.footer ul a{font-size:.94rem;color:var(--ink-2);transition:.2s}.footer ul a:hover{color:var(--accent-deep)}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:24px;font-size:.84rem;color:var(--muted)}
+
+/* ---------- Floating WhatsApp ---------- */
+.wa-float{position:fixed;z-index:120;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;
+  background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px rgba(18,140,80,.42);
+  transition:transform .25s var(--ease)}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px}
+.wa-float::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.5);opacity:0}100%{opacity:0}}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:920px){
+  .hero{padding:52px 0 64px}
+  .hero-grid{grid-template-columns:1fr;gap:42px}
+  .hero-media{order:-1;max-width:440px}
+  .visit-grid{grid-template-columns:1fr;gap:30px}
+  .menu-grid{grid-template-columns:repeat(2,1fr)}
+  .hl-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .section{padding:72px 0}
+  .nav-links{display:none}
+  .nav-cta{display:none}
+  .nav-toggle{display:grid}
+  .mobile-menu{display:none;position:fixed;inset:72px 0 0;z-index:99;background:var(--bg);padding:28px 24px;flex-direction:column;gap:6px;border-top:1px solid var(--line);overflow-y:auto}
+  .mobile-menu.open{display:flex}
+  .mobile-menu a{font-family:var(--font-display);font-size:1.5rem;font-weight:500;padding:15px 4px;border-bottom:1px solid var(--line);color:var(--ink)}
+  .mobile-menu .btn{margin-top:18px;justify-content:center;font-family:var(--font-body)}
+}
+@media(max-width:680px){
+  body{font-size:16px}
+  .section{padding:60px 0}
+  .section-head{margin-bottom:38px}
+  .menu-grid{grid-template-columns:1fr}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:158px}
+  .gal .tall{grid-row:auto}
+  .gal .wide{grid-column:auto}
+  .cta-final{padding:76px 0}
+  .cta-final .btn-row .btn,.hero-cta .btn,.visit-card .btn-row .btn{flex:1 1 100%;white-space:normal}
+  .footer-top{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:400px){
+  .hl-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important}
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#menu">Skip to content</a>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="Fanajeen beachfront café home">
+      <span class="mark">F</span>
+      <span class="wm">Fanajeen <small>Beachfront Café</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why us</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-primary nav-cta" href="https://wa.me/96890454545?text=Hi%20Fanajeen%2C%20I%27d%20like%20to%20ask%20about%20a%20table%20and%20your%20menu." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.907zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span>Message us</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#why">Why us</a>
+    <a href="#visit">Visit</a>
+    <a class="btn btn-primary" href="https://wa.me/96890454545?text=Hi%20Fanajeen%2C%20I%27d%20like%20to%20ask%20about%20a%20table%20and%20your%20menu." target="_blank" rel="noopener">Message us on WhatsApp</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Beachfront Café · Azaiba, Muscat</span>
+      <h1>Coffee with a <em>sea view.</em></h1>
+      <p class="lede">A relaxed café right on the Azaiba seafront — specialty coffee, fresh all-day breakfast and something sweet, with the sea just a few steps away.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="https://wa.me/96890454545?text=Hi%20Fanajeen%2C%20I%27d%20like%20to%20ask%20about%20a%20table%20and%20your%20menu." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.907zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Message us on WhatsApp</span>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="tel:+96890454545">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Call</span>
+        </a>
+      </div>
+      <div class="rating-chip">
+        <svg class="ig" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.5 6h6l-4.8 3.6 1.8 6L12 15.8 6.5 18.6l1.8-6L3.5 9h6z"/></svg>
+        <b>4.1 ★</b>
+        <span class="g">55 reviews · TripAdvisor</span>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="frame">
+        <img src="assets/hero.jpg" width="1400" height="787" fetchpriority="high"
+             alt="A barista pouring silky milk into an espresso, forming latte art in a white cup" />
+      </div>
+      <div class="hero-tag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div>
+          <div class="t">Azaiba Seafront</div>
+          <div class="s">coffee by the sea</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRUST STRIP ===================== -->
+<section class="trust">
+  <div class="container">
+    <span class="trust-item"><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.5 6h6l-4.8 3.6 1.8 6L12 15.8 6.5 18.6l1.8-6L3.5 9h6z"/></svg><span><b>4.1</b> · 55 reviews on TripAdvisor</span></span>
+    <span class="trust-sep"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M8.2 12.5L7 21l5-2.8 5 2.8-1.2-8.5"/></svg><span><b>#7 of 72</b> Muscat coffee spots</span></span>
+    <span class="trust-sep"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>On the Azaiba seafront</span></span>
+    <span class="trust-sep"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8h9l-1 11a2 2 0 01-2 1.9H9a2 2 0 01-2-1.9L6 8z"/><path d="M8 8V6a3 3 0 016 0v2"/></svg><span>Dine in &amp; takeaway</span></span>
+  </div>
+</section>
+
+<!-- ===================== MENU ===================== -->
+<section class="section" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">On the menu</span>
+      <h2>From first coffee to last bite</h2>
+      <p>Freshly pulled espresso, cold drinks for the heat, a proper breakfast and something sweet — all served with the sea breeze. <em>Fanajeen</em> is Arabic for <em>coffee cups</em>, and that's exactly where we start.</p>
+      <div class="menu-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        <span>Full menu &amp; today's specials — just ask us on WhatsApp</span>
+      </div>
+    </div>
+    <div class="menu-grid">
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M18 8h1a3 3 0 010 6h-1"/><path d="M3 8h15v5a5 5 0 01-5 5H8a5 5 0 01-5-5V8z"/><path d="M7 2c0 1.2-1 1.2-1 2.4M11 2c0 1.2-1 1.2-1 2.4M15 2c0 1.2-1 1.2-1 2.4"/></svg></div>
+          <h3>Coffee &amp; Espresso</h3>
+        </div>
+        <ul>
+          <li>Espresso</li>
+          <li>Cappuccino</li>
+          <li>Flat White</li>
+          <li>Latte</li>
+          <li>Spanish Latte</li>
+          <li>Turkish</li>
+        </ul>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 8h14l-1.2 11a2 2 0 01-2 1.8H8.2a2 2 0 01-2-1.8L5 8z"/><path d="M4 8h16"/><path d="M15 3l-4 5"/></svg></div>
+          <h3>Cold &amp; Iced</h3>
+        </div>
+        <ul>
+          <li>Iced Latte</li>
+          <li>Cold Brew</li>
+          <li>Iced Spanish</li>
+          <li>Frappé</li>
+          <li>Iced Americano</li>
+        </ul>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><ellipse cx="12" cy="13" rx="8" ry="5.4"/><circle cx="13" cy="13" r="2.4" fill="currentColor" stroke="none"/></svg></div>
+          <h3>Breakfast</h3>
+        </div>
+        <ul>
+          <li>Shakshuka</li>
+          <li>Eggs &amp; Toast</li>
+          <li>Halloumi</li>
+          <li>Foul</li>
+          <li>Croissants</li>
+        </ul>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 8l9-4 9 4-9 3-9-3z"/><path d="M3 12l9 3 9-3"/><path d="M3 16l9 3 9-3"/></svg></div>
+          <h3>All-Day Bites</h3>
+        </div>
+        <ul>
+          <li>Sandwiches</li>
+          <li>Paninis</li>
+          <li>Wraps</li>
+          <li>Salads</li>
+          <li>Fries</li>
+        </ul>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 9h12l-1 9a2 2 0 01-2 2H9a2 2 0 01-2-2L6 9z"/><path d="M5 6h14l-1 3H6L5 6z"/><path d="M13 6V3"/></svg></div>
+          <h3>Juices &amp; Smoothies</h3>
+        </div>
+        <ul>
+          <li>Fresh Orange</li>
+          <li>Lemon-Mint</li>
+          <li>Mango</li>
+          <li>Avocado</li>
+          <li>Mixed Berry</li>
+        </ul>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 21h16"/><path d="M5 21v-7h14v7"/><path d="M5 14a3 3 0 003-2 3 3 0 006 0 3 3 0 003 2"/><path d="M12 4.5v2.5"/></svg></div>
+          <h3>Sweets &amp; Cakes</h3>
+        </div>
+        <ul>
+          <li>Cheesecake</li>
+          <li>Kunafa</li>
+          <li>Cake Slices</li>
+          <li>Waffles</li>
+          <li>Pancakes</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section class="section highlights" id="gallery">
+  <div class="container">
+    <div class="gallery-head reveal">
+      <div class="section-head" style="margin-bottom:0">
+        <span class="eyebrow">A look around</span>
+        <h2>The sea, the coffee, the vibe</h2>
+      </div>
+      <a class="ig-link" href="https://wa.me/96890454545?text=Hi%20Fanajeen%2C%20can%20you%20share%20today%27s%20menu%3F" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.907z"/></svg>
+        <span>Ask for the menu</span>
+      </a>
+    </div>
+    <!-- NOTE: interim stock imagery. Replace with Fanajeen's own café & seafront photos (same filenames or update src). -->
+    <div class="gal reveal">
+      <figure class="tall"><img src="assets/feature.jpg" loading="lazy" width="600" height="800" alt="A tall glass of iced coffee with milk swirling over ice"><figcaption>Cold &amp; iced, all summer</figcaption></figure>
+      <figure><img src="assets/g1.jpg" loading="lazy" width="600" height="400" alt="A cappuccino with delicate leaf latte art in a white cup and saucer"><figcaption>Latte art, every cup</figcaption></figure>
+      <figure class="wide"><img src="assets/g2.jpg" loading="lazy" width="1200" height="400" alt="Turquoise sea gently meeting a soft sandy shore at golden hour"><figcaption>Right on the seafront</figcaption></figure>
+      <figure><img src="assets/g3.jpg" loading="lazy" width="600" height="400" alt="A breakfast plate of eggs on toast with grilled tomato and fresh salad"><figcaption>Breakfast, all morning</figcaption></figure>
+      <figure><img src="assets/g4.jpg" loading="lazy" width="600" height="400" alt="A slice of layered cake topped with fresh raspberries on a dark plate"><figcaption>Something sweet</figcaption></figure>
+      <figure><img src="assets/g5.jpg" loading="lazy" width="600" height="400" alt="A warm, plant-filled café interior with wooden tables and soft lighting"><figcaption>Come sit a while</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY FANAJEEN ===================== -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Fanajeen</span>
+      <h2>A little corner of the coast</h2>
+      <p>Somewhere to slow down with a good coffee and the sea in view — morning, afternoon or an easy evening by the water.</p>
+    </div>
+    <div class="hl-grid">
+      <div class="hl reveal">
+        <div class="hl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3"/><path d="M3 16c2 0 2 2 4.5 2s2.5-2 4.5-2 2 2 4.5 2 2.5-2 4.5-2"/><path d="M3 20c2 0 2 1.6 4.5 1.6S10 20 12 20s2 1.6 4.5 1.6S19 20 21 20"/></svg></div>
+        <h3>Right on the seafront</h3>
+        <p>Tables with the Azaiba shoreline just steps away — sea breeze included.</p>
+      </div>
+      <div class="hl reveal">
+        <div class="hl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Fresh all day</h3>
+        <p>Breakfast into the afternoon, plus bites, sweets and cold drinks whenever.</p>
+      </div>
+      <div class="hl reveal">
+        <div class="hl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l1.9 4.6L18.5 9l-3.4 3.1.9 4.9L12 14.8 8 17l.9-4.9L5.5 9l4.6-1.4z"/></svg></div>
+        <h3>Coffee done properly</h3>
+        <p>Espresso pulled fresh, milk poured with care — hot or over ice.</p>
+      </div>
+      <div class="hl reveal">
+        <div class="hl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Easy to reach</h3>
+        <p>On the Azaiba beach road with parking close by — dine in or take away.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VISIT / MAP ===================== -->
+<section class="section visit" id="visit">
+  <div class="container">
+    <div class="section-head reveal" style="max-width:680px">
+      <span class="eyebrow">Find us</span>
+      <h2>By the sea in Azaiba</h2>
+      <p>You'll find Fanajeen right on the Azaiba seafront in Muscat. Drop us a message before you head over and we'll make sure there's a table waiting.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="map-frame reveal">
+        <iframe
+          src="https://www.google.com/maps?q=Fanajeen%20Cafe%2C%20Azaiba%2C%20Muscat&output=embed"
+          title="Map showing Fanajeen café on the Azaiba seafront, Muscat"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <div class="visit-card reveal">
+        <div class="info-row">
+          <div class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="k">Location</div>
+            <div class="v">Azaiba Seafront, Muscat — on the beach road, by the sea</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div>
+            <div class="k">Opening hours</div>
+            <div class="v">Open daily — message us to confirm today's timings.</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div>
+            <div class="k">Contact</div>
+            <div class="v"><a href="https://wa.me/96890454545" target="_blank" rel="noopener" style="color:var(--accent-deep);font-weight:600">WhatsApp +968 9045 4545</a> · <a href="tel:+96890454545" style="color:var(--accent-deep);font-weight:600">Call +968 9045 4545</a></div>
+          </div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Fanajeen%20Cafe%2C%20Azaiba%2C%20Muscat" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Get directions</span>
+          </a>
+          <a class="btn btn-ghost" href="https://wa.me/96890454545?text=Hi%20Fanajeen%2C%20I%27d%20like%20to%20ask%20about%20a%20table%20and%20your%20menu." target="_blank" rel="noopener">
+            <span>Message us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="cta-final">
+  <div class="container inner">
+    <span class="eyebrow" style="justify-content:center">See you by the sea</span>
+    <h2>Come for the coffee, stay for the view</h2>
+    <p>Message us on WhatsApp to ask about a table, today's specials or a takeaway order — we'll be right here on the Azaiba seafront.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary btn-lg" href="https://wa.me/96890454545?text=Hi%20Fanajeen%2C%20I%27d%20like%20to%20ask%20about%20a%20table%20and%20your%20menu." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.907zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span>Message us on WhatsApp</span>
+      </a>
+      <a class="btn btn-ghost btn-lg" href="tel:+96890454545">
+        <span>Call +968 9045 4545</span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="#top"><span class="mark">F</span><span class="wm">Fanajeen <small>Beachfront Café</small></span></a>
+        <p>A relaxed beachfront café on the Azaiba seafront in Muscat — specialty coffee, fresh breakfast and sweets, with the sea just steps away. <em>Fanajeen</em> means "coffee cups" in Arabic.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#why">Why us</a></li>
+          <li><a href="#visit">Visit &amp; hours</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="https://wa.me/96890454545" target="_blank" rel="noopener">WhatsApp us</a></li>
+          <li><a href="tel:+96890454545">+968 9045 4545</a></li>
+          <li><span>Azaiba Seafront, Muscat</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="yr"></span> Fanajeen · Azaiba Seafront, Muscat</span>
+      <span>Preview site — menu &amp; hours to be confirmed with the owner.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING WHATSAPP ===================== -->
+<a class="wa-float" href="https://wa.me/96890454545?text=Hi%20Fanajeen%2C%20I%27d%20like%20to%20ask%20about%20a%20table%20and%20your%20menu." target="_blank" rel="noopener" aria-label="Chat with Fanajeen on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.907zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var tgl = document.getElementById('navToggle'), mm = document.getElementById('mobileMenu');
+  tgl.addEventListener('click', function(){
+    var open = mm.classList.toggle('open');
+    tgl.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open');tgl.setAttribute('aria-expanded',false);document.body.style.overflow='';});});
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

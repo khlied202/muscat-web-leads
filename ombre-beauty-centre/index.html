@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>O'mbre Beauty Centre — Ladies Salon &amp; Salt-Cave Spa in Al Khuwair, Muscat</title>
+<meta name="description" content="O'mbre Beauty Centre — a private ladies-only salon and salt-cave spa in Al Khuwair, Muscat. Hair, skin, nails, massage and halotherapy. Rated 4.7 on Fresha. Book on WhatsApp." />
+<meta name="theme-color" content="#ffffff" />
+<meta property="og:title" content="O'mbre Beauty Centre — Ladies Salon & Salt-Cave Spa" />
+<meta property="og:description" content="Hair, skin, nails, spa rituals and a restorative salt cave — a ladies-only sanctuary in Al Khuwair, Muscat. Book on WhatsApp." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23241a1e'/%3E%3Ctext x='50' y='70' font-size='56' text-anchor='middle' fill='%23C98A9B' font-family='Georgia,serif'%3EO%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   O'MBRE BEAUTY CENTRE — Light Editorial (v3 system)
+   Bright base · dusty-rose accent · Cormorant Garamond · serene
+   ============================================================ */
+:root{
+  --bg:#ffffff;
+  --bg-soft:#faf5f6;
+  --bg-tint:#fbeef1;
+  --ink:#241a1e;
+  --ink-2:#40303a;
+  --muted:#6d5c63;
+  --line:#efe4e8;
+  --line-2:#e4d4da;
+  --accent:#C98A9B;
+  --accent-deep:#8f5266;
+  --accent-soft:#f6e4ea;
+  --wa:#25d366; --wa-deep:#128c50;
+  --shadow-sm:0 1px 2px rgba(36,26,30,.05);
+  --shadow-md:0 14px 34px -16px rgba(36,26,30,.20);
+  --shadow-lg:0 34px 70px -24px rgba(36,26,30,.26);
+  --r-sm:12px; --r-md:18px; --r-lg:24px; --r-xl:30px;
+  --maxw:1180px;
+  --font-display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --font-body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink-2);
+  font-family:var(--font-body);font-size:17px;line-height:1.65;font-weight:400;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2{font-family:var(--font-display);font-weight:600;line-height:1.04;margin:0;color:var(--ink);letter-spacing:0}
+h3{font-family:var(--font-body);font-weight:700;line-height:1.25;margin:0;color:var(--ink);letter-spacing:-.01em}
+p{margin:0}
+.container{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:24px}
+.eyebrow{
+  font-family:var(--font-body);font-weight:700;font-size:.76rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--accent-deep);display:inline-flex;align-items:center;gap:.6em;
+}
+.eyebrow::before{content:"";width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:2px}
+.section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:52px}
+.section-head h2{font-size:clamp(2.6rem,6vw,4rem);margin:16px 0 14px}
+.section-head p{color:var(--muted);font-size:1.08rem;line-height:1.6}
+
+.skip{position:fixed;left:12px;top:-100px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:200;transition:top .2s}
+.skip:focus{top:12px}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6em;
+  font-family:var(--font-body);font-weight:600;font-size:1rem;line-height:1;
+  padding:15px 26px;border-radius:999px;cursor:pointer;border:1.5px solid transparent;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s,border-color .25s;
+  min-height:52px;white-space:nowrap;
+}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--ink);color:#fff;box-shadow:var(--shadow-sm)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);background:#000}
+.btn-primary:focus-visible{outline:3px solid var(--accent-deep);outline-offset:3px}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px);background:rgba(36,26,30,.03)}
+.btn-accent{background:var(--accent-deep);color:#fff;box-shadow:var(--shadow-sm)}
+.btn-accent:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);background:#7a4457}
+.btn-lg{font-size:1.05rem;padding:18px 32px;min-height:58px}
+
+/* ---------- Nav ---------- */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.80);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--font-display);font-weight:600;font-size:1.7rem;color:var(--ink);letter-spacing:.01em}
+.brand .mark{width:40px;height:40px;border-radius:12px;background:var(--ink);color:var(--accent);display:grid;place-items:center;font-family:var(--font-display);font-size:1.4rem;font-weight:600;flex:none}
+.brand small{font-family:var(--font-body);font-weight:700;color:var(--accent-deep);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;display:block;line-height:1}
+.brand .wm{display:flex;flex-direction:column;gap:3px}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:.95rem;font-weight:600;color:var(--ink-2);transition:color .2s}
+.nav-links a:hover{color:var(--accent-deep)}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-cta{padding:12px 20px;min-height:46px;font-size:.92rem}
+.nav-toggle{display:none;background:transparent;border:1.5px solid var(--line-2);border-radius:12px;width:46px;height:46px;cursor:pointer;color:var(--ink)}
+.nav-toggle svg{width:22px;height:22px;margin:auto}
+.mobile-menu{display:none}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:72px 0 84px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(70% 60% at 88% 4%,rgba(201,138,155,.16),transparent 60%),
+             radial-gradient(60% 50% at 2% 100%,rgba(201,138,155,.08),transparent 62%)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center}
+.hero-copy{max-width:580px}
+.hero h1{font-size:clamp(3.1rem,8vw,5.6rem);margin:22px 0 0}
+.hero h1 em{font-style:italic;color:var(--accent-deep)}
+.hero .lede{font-size:1.22rem;color:var(--muted);margin:22px 0 30px;max-width:44ch;line-height:1.6}
+.hero-cta{display:flex;flex-wrap:wrap;gap:13px;margin-bottom:26px}
+.rating-chip{display:inline-flex;align-items:center;gap:11px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 16px;box-shadow:var(--shadow-sm)}
+.rating-chip .stars{color:var(--accent);letter-spacing:1px;font-size:1rem}
+.rating-chip .stars .half{opacity:.34}
+.rating-chip b{font-weight:800;color:var(--ink)}
+.rating-chip .g{background:var(--bg-soft);border-radius:999px;padding:5px 12px;font-size:.82rem;font-weight:600;color:var(--muted)}
+.hero-media{position:relative}
+.hero-media .frame{position:relative;border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/5}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-tag{position:absolute;left:18px;bottom:18px;display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border:1px solid var(--line);padding:11px 16px;border-radius:999px;box-shadow:var(--shadow-md)}
+.hero-tag svg{width:20px;height:20px;color:var(--accent-deep);flex:none}
+.hero-tag .t{font-weight:700;color:var(--ink);font-size:.92rem;line-height:1.1}
+.hero-tag .s{font-size:.76rem;color:var(--muted)}
+
+/* ---------- Trust strip ---------- */
+.trust{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust .container{display:flex;flex-wrap:wrap;gap:14px 38px;justify-content:center;align-items:center;padding-top:22px;padding-bottom:22px;text-align:center}
+.trust-item{display:inline-flex;align-items:center;gap:9px;font-size:.95rem;color:var(--ink-2)}
+.trust-item svg{width:18px;height:18px;color:var(--accent);flex:none}
+.trust-item b{color:var(--ink);font-weight:700}
+.trust-sep{width:5px;height:5px;border-radius:50%;background:var(--accent-soft)}
+
+/* ---------- Services ---------- */
+.menu-note{display:inline-flex;align-items:center;gap:9px;background:var(--accent-soft);border:1px solid var(--line-2);border-radius:999px;padding:8px 16px;font-size:.86rem;color:var(--accent-deep);font-weight:600;margin-top:20px}
+.menu-note svg{width:16px;height:16px}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.mcard{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-lg);padding:32px 30px;box-shadow:var(--shadow-sm);transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s}
+.mcard:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);border-color:var(--line-2)}
+.mcard-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.mcard-ico{width:50px;height:50px;border-radius:14px;background:var(--accent-soft);display:grid;place-items:center;color:var(--accent-deep);flex:none}
+.mcard-ico svg{width:26px;height:26px}
+.mcard h3{font-size:1.3rem}
+.mcard ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.mcard li{font-size:.9rem;color:var(--ink-2);background:var(--bg-soft);border:1px solid var(--line);border-radius:999px;padding:6px 13px}
+
+/* ---------- Highlights ---------- */
+.highlights{background:var(--bg-soft)}
+.hl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.hl{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-md);padding:28px 24px;box-shadow:var(--shadow-sm)}
+.hl-ico{width:50px;height:50px;border-radius:14px;background:var(--accent-soft);color:var(--accent-deep);display:grid;place-items:center;margin-bottom:18px}
+.hl-ico svg{width:24px;height:24px}
+.hl h3{font-size:1.14rem;margin-bottom:8px}
+.hl p{font-size:.92rem;color:var(--muted)}
+
+/* ---------- Gallery ---------- */
+.gallery-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:40px}
+.ig-link{display:inline-flex;align-items:center;gap:9px;font-weight:700;color:var(--accent-deep);font-size:.93rem;border:1.5px solid var(--line-2);border-radius:999px;padding:11px 18px;transition:.2s;min-height:46px}
+.ig-link:hover{border-color:var(--accent-deep);background:var(--accent-soft)}
+.ig-link svg{width:19px;height:19px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:16px}
+.gal figure{margin:0;position:relative;overflow:hidden;border-radius:var(--r-md);box-shadow:var(--shadow-sm)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.gal figure:hover img{transform:scale(1.06)}
+.gal .tall{grid-row:span 2}
+.gal .wide{grid-column:span 2}
+.gal figcaption{position:absolute;inset:auto 0 0 0;padding:28px 16px 13px;font-size:.82rem;color:#fff;
+  background:linear-gradient(to top,rgba(30,16,22,.76),transparent);opacity:0;transition:opacity .3s;font-weight:600}
+.gal figure:hover figcaption{opacity:1}
+
+/* ---------- Visit ---------- */
+.visit{background:var(--bg-soft)}
+.visit-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:stretch}
+.visit h2{font-size:clamp(2.4rem,5.4vw,3.4rem);margin:16px 0 24px}
+.info-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-lg);padding:30px;box-shadow:var(--shadow-sm)}
+.info-row{display:flex;gap:15px;padding:18px 0;border-bottom:1px solid var(--line)}
+.info-row:last-child{border-bottom:0;padding-bottom:0}
+.info-row:first-child{padding-top:0}
+.info-ico{width:44px;height:44px;border-radius:12px;background:var(--accent-soft);color:var(--accent-deep);display:grid;place-items:center;flex:none}
+.info-ico svg{width:21px;height:21px}
+.info-row .k{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-deep);font-weight:700;margin-bottom:4px}
+.info-row .v{color:var(--ink-2);font-size:1rem}
+.hours-list{margin:8px 0 0;padding:0;list-style:none}
+.hours-list li{display:flex;justify-content:space-between;gap:14px;font-size:.95rem;color:var(--ink-2);padding:5px 0}
+.hours-list .conf{color:var(--accent-deep);font-weight:700}
+.hours-hint{font-size:.8rem;color:var(--muted);margin-top:10px}
+.map-card{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);min-height:360px;box-shadow:var(--shadow-sm)}
+.map-card iframe{width:100%;height:100%;min-height:360px;border:0;display:block}
+.visit .btn-row{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- Final CTA ---------- */
+.cta-final{position:relative;text-align:center;padding:104px 0;overflow:hidden;background:var(--bg-tint);border-top:1px solid var(--line)}
+.cta-final .inner{position:relative;max-width:700px;margin-inline:auto}
+.cta-final h2{font-size:clamp(2.7rem,6.5vw,4.2rem);margin-bottom:18px}
+.cta-final p{color:var(--muted);font-size:1.14rem;margin-bottom:32px}
+.cta-final .btn-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+
+/* ---------- Footer ---------- */
+.footer{background:var(--bg-soft);color:var(--muted);padding:64px 0 30px;border-top:1px solid var(--line)}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid var(--line)}
+.footer .brand{color:var(--ink);margin-bottom:16px}
+.footer p{font-size:.94rem;line-height:1.7}
+.footer h4{font-family:var(--font-body);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-deep);font-weight:700;margin:0 0 15px}
+.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.footer ul a{font-size:.94rem;color:var(--ink-2);transition:.2s}.footer ul a:hover{color:var(--accent-deep)}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:24px;font-size:.84rem;color:var(--muted)}
+
+/* ---------- Floating WhatsApp ---------- */
+.wa-float{position:fixed;z-index:120;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;
+  background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px rgba(18,140,80,.42);
+  transition:transform .25s var(--ease)}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px}
+.wa-float::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.5);opacity:0}100%{opacity:0}}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:920px){
+  .hero{padding:52px 0 64px}
+  .hero-grid{grid-template-columns:1fr;gap:42px}
+  .hero-media{order:-1;max-width:440px}
+  .visit-grid{grid-template-columns:1fr}
+  .hl-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .section{padding:72px 0}
+  .nav-links{display:none}
+  .nav-cta{display:none}
+  .nav-toggle{display:grid}
+  .mobile-menu{display:none;position:fixed;inset:72px 0 0;z-index:99;background:var(--bg);padding:28px 24px;flex-direction:column;gap:6px;border-top:1px solid var(--line);overflow-y:auto}
+  .mobile-menu.open{display:flex}
+  .mobile-menu a{font-family:var(--font-display);font-size:2rem;font-weight:600;padding:13px 4px;border-bottom:1px solid var(--line);color:var(--ink)}
+  .mobile-menu .btn{margin-top:18px;justify-content:center;font-family:var(--font-body);font-size:1rem}
+}
+@media(max-width:680px){
+  body{font-size:16px}
+  .section{padding:60px 0}
+  .section-head{margin-bottom:38px}
+  .menu-grid{grid-template-columns:1fr}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:158px}
+  .gal .tall{grid-row:auto}
+  .gal .wide{grid-column:auto}
+  .cta-final{padding:76px 0}
+  .cta-final .btn-row .btn,.hero-cta .btn{flex:1 1 100%}
+  .footer-top{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:400px){
+  .hl-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important}
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#services">Skip to content</a>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="O'mbre Beauty Centre home">
+      <span class="mark">O</span>
+      <span class="wm">O'mbre <small>Beauty &amp; Spa</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-primary nav-cta" href="https://wa.me/96896596733?text=Hello%20O%27mbre%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.907zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span>Book on WhatsApp</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+    <a class="btn btn-primary" href="https://wa.me/96896596733?text=Hello%20O%27mbre%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Ladies Salon &amp; Salt-Cave Spa · Al Khuwair</span>
+      <h1>Beauty &amp; calm, <em>just for you.</em></h1>
+      <p class="lede">Hair, skin, nails and spa rituals — plus a restorative salt cave — in a private, ladies-only sanctuary in the heart of Muscat.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="https://wa.me/96896596733?text=Hello%20O%27mbre%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.907zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Book on WhatsApp</span>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="tel:+96896596733">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Call</span>
+        </a>
+      </div>
+      <div class="rating-chip" role="img" aria-label="Rated 4.7 out of 5 on Fresha from 157 reviews">
+        <span class="stars" aria-hidden="true">★★★★<span class="half">★</span></span>
+        <b>4.7</b>
+        <span class="g">Fresha · 157 reviews</span>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="frame">
+        <img src="assets/hero.jpg" width="1000" height="1250" fetchpriority="high"
+             alt="Close-up of a woman receiving professional makeup with soft pink eyeshadow and glossy lips" />
+      </div>
+      <div class="hero-tag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.65-9.5 9-9.5 9z"/></svg>
+        <div>
+          <div class="t">Ladies only</div>
+          <div class="s">private &amp; serene</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRUST STRIP ===================== -->
+<section class="trust">
+  <div class="container">
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 7.1-1.01L12 2z"/></svg> <b>4.7</b>&nbsp;<span>Fresha rating</span></span>
+    <span class="trust-sep"></span>
+    <span class="trust-item"><b>157</b>&nbsp;<span>reviews</span></span>
+    <span class="trust-sep"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Al Khuwair · Muscat</span></span>
+    <span class="trust-sep"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.65-9.5 9-9.5 9z"/></svg><span>Ladies only · By appointment</span></span>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2>Cared for, head to toe</h2>
+      <p>Hair, skin, nails, spa and our signature salt cave — delivered by skilled, friendly therapists. Explore the menu, then message us on WhatsApp to book and ask about prices.</p>
+      <div class="menu-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        <span>Full price list shared on WhatsApp — just ask</span>
+      </div>
+    </div>
+    <div class="menu-grid">
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"/></svg></div>
+          <h3>Hair</h3>
+        </div>
+        <ul>
+          <li>Cut &amp; style</li>
+          <li>Blow-dry</li>
+          <li>Colour &amp; highlights</li>
+          <li>Keratin &amp; treatments</li>
+          <li>Bridal hair</li>
+        </ul>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l1.6 3.9L18 8l-3 3 .8 4.4L12 13.6 8.2 15.4 9 11 6 8l4.4-1.1L12 3z"/></svg></div>
+          <h3>Skin &amp; Facials</h3>
+        </div>
+        <ul>
+          <li>Deep-cleanse facial</li>
+          <li>Hydrating facial</li>
+          <li>Anti-ageing</li>
+          <li>Brightening</li>
+        </ul>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22c-3 0-5-2-5-6V6a3 3 0 016 0v9M12 22c3 0 5-2 5-6"/><path d="M10 6V4a2 2 0 014 0v2"/></svg></div>
+          <h3>Nails</h3>
+        </div>
+        <ul>
+          <li>Manicure</li>
+          <li>Pedicure</li>
+          <li>Gel polish</li>
+          <li>Nail art</li>
+        </ul>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 12c3 0 5.5-2 5.5-5S15 2 12 2 6.5 4 6.5 7 9 12 12 12zM4 20c0-3 3.5-5 8-5s8 2 8 5"/></svg></div>
+          <h3>Spa &amp; Massage</h3>
+        </div>
+        <ul>
+          <li>Relaxing massage</li>
+          <li>Hot-stone</li>
+          <li>Body scrub</li>
+          <li>Aromatherapy</li>
+        </ul>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20l6-13 4 8 3-5 5 10z"/></svg></div>
+          <h3>Salt Cave</h3>
+        </div>
+        <ul>
+          <li>Halotherapy session</li>
+          <li>Relax &amp; breathe</li>
+          <li>Skin &amp; respiratory wellness</li>
+        </ul>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-head">
+          <div class="mcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C9 6 8 9 8 13a4 4 0 008 0c0-4-1-7-4-11zM12 22v-6"/></svg></div>
+          <h3>Waxing &amp; Threading</h3>
+        </div>
+        <ul>
+          <li>Threading</li>
+          <li>Full-body waxing</li>
+          <li>Brow shaping</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HIGHLIGHTS ===================== -->
+<section class="section highlights">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why O'mbre</span>
+      <h2>A little sanctuary of your own</h2>
+    </div>
+    <div class="hl-grid">
+      <div class="hl reveal">
+        <div class="hl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.35-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.65-9.5 9-9.5 9z"/></svg></div>
+        <h3>Ladies-only space</h3>
+        <p>A private, comfortable salon designed just for women.</p>
+      </div>
+      <div class="hl reveal">
+        <div class="hl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20l6-13 4 8 3-5 5 10z"/></svg></div>
+        <h3>Signature salt cave</h3>
+        <p>Restorative halotherapy to unwind, breathe and glow.</p>
+      </div>
+      <div class="hl reveal">
+        <div class="hl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <h3>Skilled therapists</h3>
+        <p>Friendly, experienced hands for hair, skin and body.</p>
+      </div>
+      <div class="hl reveal">
+        <div class="hl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
+        <h3>Book in seconds</h3>
+        <p>One WhatsApp message to reserve your time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="gallery-head reveal">
+      <div class="section-head" style="margin-bottom:0">
+        <span class="eyebrow">Our Space</span>
+        <h2>A glimpse of O'mbre</h2>
+      </div>
+      <a class="ig-link" href="https://wa.me/96896596733?text=Hello%20O%27mbre%2C%20could%20you%20share%20your%20treatment%20packages%3F" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.907z"/></svg>
+        <span>Ask about packages</span>
+      </a>
+    </div>
+    <!-- NOTE: interim stock imagery. Replace with the salon's own photos (same filenames or update src). -->
+    <div class="gal reveal">
+      <figure class="tall"><img src="assets/feature.jpg" loading="lazy" width="600" height="800" alt="A woman relaxing during a facial mask treatment in a white robe and headband"><figcaption>Facials &amp; skincare</figcaption></figure>
+      <figure><img src="assets/g1.jpg" loading="lazy" width="600" height="400" alt="A woman resting calmly during a soothing facial treatment"><figcaption>Relax &amp; refresh</figcaption></figure>
+      <figure class="wide"><img src="assets/g2.jpg" loading="lazy" width="1200" height="400" alt="Spa still life with a soft towel, lit candle and pink tulips"><figcaption>Serene, spa-clean details</figcaption></figure>
+      <figure><img src="assets/g3.jpg" loading="lazy" width="600" height="400" alt="A manicure in progress with soft pink polish"><figcaption>Manicure &amp; nail care</figcaption></figure>
+      <figure><img src="assets/g4.jpg" loading="lazy" width="600" height="400" alt="A calming hot-stone back massage with white orchids"><figcaption>Massage &amp; body</figcaption></figure>
+      <figure><img src="assets/g5.jpg" loading="lazy" width="600" height="400" alt="A tranquil relaxation lounge with soft light and greenery"><figcaption>Unwind with us</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VISIT ===================== -->
+<section class="section visit" id="visit">
+  <div class="container">
+    <div class="visit-grid">
+      <div>
+        <span class="eyebrow">Visit Us</span>
+        <h2>Find O'mbre in Al Khuwair</h2>
+        <div class="info-card reveal">
+          <div class="info-row">
+            <div class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <div class="k">Location</div>
+              <div class="v">Al Khuwair, Muscat, Oman</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div style="flex:1">
+              <div class="k">Opening Hours</div>
+              <ul class="hours-list">
+                <li><span>Saturday – Thursday</span> <span class="conf">Confirm on WhatsApp</span></li>
+                <li><span>Friday</span> <span class="conf">Confirm on WhatsApp</span></li>
+              </ul>
+              <p class="hours-hint">Message us for today's timing — we'll confirm right away.</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div>
+              <div class="k">Contact</div>
+              <div class="v"><a href="https://wa.me/96896596733" target="_blank" rel="noopener" style="color:var(--accent-deep);font-weight:600">WhatsApp +968 9659 6733</a> · <a href="tel:+96896596733" style="color:var(--accent-deep);font-weight:600">Call +968 9659 6733</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-accent" href="https://www.google.com/maps/search/?api=1&query=Ombre%20Beauty%20Centre%20Al%20Khuwair%20Muscat" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Get Directions</span>
+          </a>
+          <a class="btn btn-ghost" href="https://wa.me/96896596733?text=Hello%20O%27mbre%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+            <span>Book on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+      <div class="map-card reveal">
+        <iframe title="Map showing O'mbre Beauty Centre in Al Khuwair, Muscat" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Ombre%20Beauty%20Centre%20Al%20Khuwair%20Muscat%20Oman&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="cta-final">
+  <div class="container inner">
+    <span class="eyebrow" style="justify-content:center">Ready for some you-time?</span>
+    <h2>Book your moment of calm</h2>
+    <p>Tell us what you'd love — hair, facial, nails, massage or a salt-cave session — and we'll find your perfect time on WhatsApp.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary btn-lg" href="https://wa.me/96896596733?text=Hello%20O%27mbre%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.907zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span>Book on WhatsApp</span>
+      </a>
+      <a class="btn btn-ghost btn-lg" href="tel:+96896596733">
+        <span>Call +968 9659 6733</span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="#top"><span class="mark">O</span><span class="wm">O'mbre <small>Beauty &amp; Spa</small></span></a>
+        <p>A private, ladies-only salon and salt-cave spa in Al Khuwair, Muscat — hair, skin, nails, massage and halotherapy in one serene place.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit &amp; Hours</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="https://wa.me/96896596733" target="_blank" rel="noopener">WhatsApp us</a></li>
+          <li><a href="tel:+96896596733">+968 9659 6733</a></li>
+          <li><span>Al Khuwair, Muscat</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="yr"></span> O'mbre Beauty Centre</span>
+      <span>Preview site — services &amp; hours to be confirmed with the owner.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING WHATSAPP ===================== -->
+<a class="wa-float" href="https://wa.me/96896596733?text=Hello%20O%27mbre%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="Chat with O'mbre Beauty Centre on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.907zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var tgl = document.getElementById('navToggle'), mm = document.getElementById('mobileMenu');
+  tgl.addEventListener('click', function(){
+    var open = mm.classList.toggle('open');
+    tgl.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open');tgl.setAttribute('aria-expanded',false);document.body.style.overflow='';});});
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
