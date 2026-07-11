@@ -1,0 +1,50 @@
+WhatsApp pitch — Fellas & Co Barbershop (owner)
+Send from: Abdulkhalid  |  To: +968 9019 2001
+Tone: confident, straight-talking, bilingual (Al Khuwair barber crowd)
+------------------------------------------------------------------
+
+ENGLISH
+------------------------------------------------------------------
+Hey Fellas & Co 💈
+
+I'm Abdulkhalid, a web designer here in Muscat. Love the shop's look on
+Instagram — clean work.
+
+Quick thing: right now the only way people find you online is Instagram.
+So when a guy in Al Khuwair searches "barber near me" on Google, you're
+invisible and he books the shop that has a website instead.
+
+I fixed that for you — for free. I built a preview site with your services
+& prices, a gallery, opening hours, a map, and a "Book on WhatsApp" button
+so customers can grab a chair in one tap:
+{{LIVE_SITE_LINK}}
+
+Take a look. If you like it, I'll make it live on your own link this week
+and get you showing up on Google. Prices and photos all editable to yours.
+
+Want me to send details? ✂️
+
+
+العربية
+------------------------------------------------------------------
+هلا فيلاز آند كو 💈
+
+أنا عبدالخالد، مصمم مواقع في مسقط. شغلكم بالإنستقرام نظيف وحلو 👌
+
+بس الحين الزبون ما يلقاكم إلا بالإنستقرام. لما أحد بالخوير يبحث بقوقل عن
+"حلاق قريب مني" ما تطلعون له، فيروح للي عنده موقع.
+
+جهّزت لكم موقع معاينة مجاني فيه الخدمات والأسعار، معرض صور، أوقات الدوام،
+خريطة، وزر "احجز عبر الواتساب" — الزبون يحجز كرسيه بضغطة:
+{{LIVE_SITE_LINK}}
+
+شوفوه، وإذا عجبكم أنشره على رابطكم هالأسبوع وتبدون تطلعون بقوقل. كل الأسعار
+والصور تتعدل حسب طلبكم. أرسل لكم التفاصيل؟ ✂️
+
+------------------------------------------------------------------
+NOTES for Abdulkhalid:
+- Replace {{LIVE_SITE_LINK}} with the GitHub Pages URL.
+- Barbers value "book more chairs" over "look pretty" → lead with the
+  lost-Google-bookings angle (used above).
+- Good candidate for the hybrid plan (build + small monthly for updates).
+- Follow-up after 3 days: "Did you catch the preview I sent? 💈"

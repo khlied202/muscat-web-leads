@@ -1,0 +1,53 @@
+WhatsApp pitch — Nabu Café (owner)
+Send from: Abdulkhalid  |  To: +968 9421 1665
+Tone: warm, respectful, bilingual (Nabu is Iraqi + Muscat cosmopolitan crowd)
+------------------------------------------------------------------
+
+ENGLISH
+------------------------------------------------------------------
+Hello Nabu Café team 👋
+
+I'm Abdulkhalid, a web designer here in Muscat. I'm a fan of your place —
+4.8 stars and ~299 reviews in Madinat Qaboos is a real achievement 👏
+
+I noticed customers can only find you on Instagram right now. So I built
+you a free preview of a proper website — your menu, photos, opening hours,
+a Google map, and a WhatsApp "order now" button all in one place, so
+people who search "Iraqi café Muscat" on Google land straight on you
+instead of a competitor.
+
+Take a look (no obligation):
+{{LIVE_SITE_LINK}}
+
+If you like it, I can put it live on your own link this week. Happy to
+adjust the menu, prices and photos to exactly what you want.
+
+Shall I send the details? 🌿
+
+
+العربية
+------------------------------------------------------------------
+مرحباً فريق مقهى نابو 👋
+
+أنا عبدالخالد، مصمم مواقع في مسقط. صراحةً أعجبني مكانكم — تقييم ٤.٨ نجمة
+وحوالي ٢٩٩ مراجعة في مدينة قابوس إنجاز رائع 👏
+
+لاحظت أن الزبائن يجدونكم فقط عبر الإنستقرام. لذلك جهّزت لكم معاينة مجانية
+لموقع إلكتروني كامل — المنيو، الصور، أوقات العمل، خريطة قوقل، وزر "اطلب
+الآن" عبر الواتساب في مكان واحد، بحيث من يبحث في قوقل عن "مقهى عراقي مسقط"
+يصلكم مباشرة بدل المنافسين.
+
+تفضلوا شوفوا المعاينة (بدون أي التزام):
+{{LIVE_SITE_LINK}}
+
+إذا أعجبكم، أقدر أنشره على رابطكم الخاص خلال هذا الأسبوع، وأعدّل المنيو
+والأسعار والصور حسب ما تحبون تماماً.
+
+أرسل لكم التفاصيل؟ 🌿
+
+------------------------------------------------------------------
+NOTES for Abdulkhalid:
+- Replace {{LIVE_SITE_LINK}} with the GitHub Pages URL once the repo is set up.
+- Best sent 11am–1pm or after 8pm (café owners are busy at open/close).
+- If no reply in 3 days, send one short follow-up: "Did you get a chance to
+  see the preview? 😊"
